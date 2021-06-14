@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="stock_de_ventas"/>
+    <title>Stock de ventas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+	<link href="./style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+    
+    <header>
+	
+        <nav>
+            <ul>
+                <li><a href="./Index.html"> Home </a></li>
+                <li><a href="./Discografia.html"> Discografia </a></li>
+                <li><a href="./Galeria_de_videos.html"> Galeria de videos </a></li>
+                <li><a href="./contactanos.html">Contáctanos</a></li>
+			    <li><a href="./stock_de_ventas.html">Stock de ventas</a></li>
+            </ul>
+        </nav>	
+    
+    </header>
+
+    <form action="#" method="GET">
+
+        <fieldset>
+
+            <h1>Venta de camisetas</h1>
+            <legend style="color: black;">(*campos obligatorios)</legend>
+
+            <label for="id_target">Nº tarjeta de crédito (unica forma de pago):(*)</label>
+            <input type="tel" name="target" id="id_target" alt="targeta de credito" autocomplete="off" 
+            pattern="[0-9]{16}" title="debe introducir los 16 digitos de la targeta de crédito" 
+            placeholder="campo obligatorio" required />
+
+            <p style="color: black;">Elige el modelo de camiseta que mas prefieras:</p>
+            <select name="modelo">
+                <option value="">Elige un modelo..</option>
+                <option value="LP">Modelo LP style</option>
+                <option value="LK">Modelo LK style</option>
+                <option value="Hybrid">Modelo Hybrid style</option>
+                <option value="Meteora">Modelo Meteora style</option>
+                <option value="Chester">Modelo Chester style</option>
+            </select>
+
+            <p style="color: black;"><label for="id_talla">Elige la talla que mas prefieras:</label></p>
+                <input type="text" name="tallas" list="listatallas" alt="tallas">
+            <datalist id="listatallas">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </datalist>
+
+            <label for="id_unidades">Pedido nº de unidades de camiseta:(*)</label>
+            <input type="number" name="unidades" id="id_unidades" alt="unidades de pedido" min="1" max="10"
+            required placeholder="campo obligatorio" />
+
+            <label for="id_color">Color que prefieras:</label><input type="color" name="color" id="id_color"
+            alt="color" />
+    
+        <fieldset>
+            <legend style="color: black;">Datos personales</legend>
+            <label for="id_DNI">DNI:(*)</label><input type="tel" name="dni" id="id_DNI" pattern="[0-9A-Z]{9}" 
+            title="El dni debe tener 9 caracteres, 8 dígitos y 1 letra mayusc." autocomplete="off" alt="dni" 
+            placeholder="campo obligatorio" required />
+
+            <label for="id_nombre">Nombre:(*)</label><input type="text" name="nombre" id="id_nombre" alt="nombre" 
+            placeholder="campo obligatorio" required />
+
+            <label for="id_apellido1">1er Apellido:(*)</label><input type="text" name="apellido1" id="id_apellido1"
+            alt="apellido" placeholder="campo obligatorio" required />
+
+            <label for="id_apellido2">2nd Apellido:</label><input type="text" name="apellido2" id="id_apellido2"
+             alt="segundo apellido" />
+
+            <label for="id_email">Email:(*)</label><input type="email" name="email" id="id_email" alt="email" required 
+            autocomplete="off" placeholder="campo obligatorio" />
+
+            <label for="id_tel">Teléfono:(*)</label><input type="tel" name="tel" id="id_tel" 
+            autocomplete="off" required pattern="[0-9]{9}" title="debe que ser un numero de telefono. ejemplo
+            000 000 000" alt="telefono" placeholder="campo obligatorio" />
+
+            <label for="id_direction">Direccion de entrega:(*)</label><input type="text" name="direction"
+             id="id_direction" required autocomplete="off" alt="direccion" placeholder="campo obligatorio" />
+
+             <label for="id_horario">Fecha esperada de la entrega:(*)</label><input type="date" name="fecha"
+             id="id_fecha" alt="horario entrega" required placeholder="campo obligatorio"  />
+
+             <label for="id_horario">Rango de horario disponible para la entrega:(*)</label>
+             <p style="color: black;">Desde:</p><input type="time" name="horario" id="id_horario" 
+             required placeholder="campo obligatorio" />
+             <p style="color: black;">Hasta:</p><input type="time" name="horario" id="id_horario2" 
+             required placeholder="campo obligatorio"  />
+             
+
+
+        </fieldset>
+
+        <p style="color: black;">Coméntanos</p>
+        <textarea cols="30" rows="5" placeholder="máximo 300 caracteres"></textarea>
+
+        <input type="reset" alt="reset" value="Limpiar formulario" />
+
+        <input type="submit" alt="enviar" value="enviar" />
+
+        </fieldset>
+    </form>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./Index.html"> Home </a></li>
+                <li><a href="./Discografia.html"> Discografia </a></li>
+                <li><a href="./Galeria_de_videos.html"> Galeria de videos </a></li>
+                <li><a href="./contactanos.html">Contáctanos</a></li>
+			    <li><a href="./stock_de_ventas.html">Stock de ventas</a></li>
+            </ul>
+    
+        </nav>
+    </footer>
+</body>
+</html>

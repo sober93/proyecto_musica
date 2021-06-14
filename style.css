@@ -1,0 +1,237 @@
+body{
+    color: rgb(202, 177, 230);
+    margin:0 auto;
+    width: 960px;
+    background-image:linear-gradient(to bottom, rgb(36, 35, 35),rgb(49, 49, 49),rgb(122, 86, 122));
+}
+header{
+    background-image: url(./images/images.png);
+    border-radius: 20%;
+    height: 180px;
+    top:0px;
+    
+}
+header h1{
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0%;
+    padding-top:175px;
+}
+nav li{
+    display: inline;
+    font-size: 25px;
+    float: left;
+}
+nav li a:link, nav a:visited{
+    text-decoration: none;
+    display: block;
+    width: 192px;
+    border-radius: 20%;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: blueviolet;
+    color: rgb(235, 172, 15);
+}
+nav li a:hover{
+    background-color: rgb(38, 0, 54);
+}
+h1, h2, h3{
+    font-size: 40px;
+    color:goldenrod;
+    text-align:center;
+}
+ol{
+     
+    list-style-type: none;
+    padding: 0%;
+    padding-top:5px;
+}
+ol li{
+    display: inline;
+    font-size: 25px;
+    float: left;
+}
+ol li a:link, ol li a:visited{
+        text-decoration: none;
+        display: block;
+        width: 480px;
+        border-radius: 70%;
+        text-align: center;
+        padding: 10px 0px;
+        background-color: blueviolet;
+        color: darkgoldenrod;
+        
+    }
+ol li a:hover{
+        background-color: rgb(38, 0, 54);
+    }
+p {
+       text-align: justify;
+       font-family: 'Share Tech', sans-serif;
+       font-size: 18px;
+   } 
+span{
+       color: goldenrod;
+   }
+.bloque1{
+       float: left;
+       width:30%;
+       padding: 1%;
+   }
+.bloque2{
+    float: left;
+    width:30%;
+    padding: 1%;
+}
+
+.bloque3{
+    float: left;
+    width:30%;
+    padding: 1%;
+}
+
+.nofloat{
+    clear: left;
+}
+
+figure img{
+    float:left;
+    border-radius: 30%;
+    padding: 40px;
+}
+p.hellofans{
+    width:20%;
+    padding-left: 360px;    
+}
+table,tr,th,td{
+    clear: left;
+    margin: 0 auto;
+    width: 960px;
+    text-align: center;
+    border:1px solid goldenrod;
+    border-collapse: collapse;
+    padding: 10px;
+    background-image:linear-gradient(to bottom, rgb(32, 32, 32),rgb(47, 47, 47),rgb(68, 67, 67));
+}
+table th{
+    font-size: 25px;
+}
+table th:hover{
+    color: rgb(132, 0, 255);
+}
+table td:hover{
+    color: lightskyblue;
+    
+}
+table td{
+    font-size: 18px;
+}
+nav.padding{
+    padding-top: 180px;
+}
+.nofloat2{
+    clear: left;
+    width: 30%;
+    padding-left: 280px;
+}
+.pagwebexternas a:link, .pagwebexternas a:visited{
+    color: rgb(0, 0, 0);
+    background-color: darkgoldenrod;
+    
+}
+.pagwebexternas a:hover{
+    background-color: rgb(0, 0, 0);
+    color: cornsilk;
+}
+
+.imagehybridtheory{
+    position: relative;
+    left: 20px;
+}
+
+form{
+    width: 50%;
+    border: 1px solid rgb(196, 13, 212);
+    padding: 20px;
+    position: relative;
+    top: 40px;
+    left: 180px;
+    margin: 20px;
+    background-color: rgb(187, 187, 187);
+}
+label{
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    color: black;
+    padding:15px;
+}
+textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+input, textarea{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+input:focus, textarea:focus{
+    background-color: rgb(179, 151, 176);
+    color: rgb(255, 230, 0);
+}
+input[type="submit"]{
+    margin-bottom: 0px;
+    background-color:rgb(0, 0, 0) ;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    background-color: rgb(163, 71, 148);
+    color: rgb(255, 0, 221);
+    cursor: pointer;
+}
+input[type="submit"]:active{
+    background-color: rgb(238, 255, 0);
+}
+input[type="reset"]:hover{
+    background-color: rgb(163, 71, 148);
+    color: rgb(255, 0, 221);
+    cursor: pointer;
+}
+input[type="reset"]:active{
+    background-color: rgb(238, 255, 0);
+}
+input:required{
+    border: 2px solid rgb(255, 0, 0);
+}
+input[type="radio"]{
+    display: inline;
+}
+input[type="color"]{
+    width: 10%;
+    position: relative;
+    left: 190px;
+    bottom: 40px;
+}
+input[type="time"]{
+    width: 30%;
+}
+input[type="date"]{
+    width: 30%;
+}
+input[type="checkbox"]{
+    position: relative;
+    bottom: 34px;
+}
+
+
+
+
+
+
+        
+    

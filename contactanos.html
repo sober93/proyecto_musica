@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="contactanos"/>
+    <title>Contáctanos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+	<link href="./style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript">
+        if(formulario.contacto.selectedIndex != 0){
+            console.log('has seleccionado una opcion');
+            return true;
+       }
+       else{
+           alert('no has seleccionado ninguna opcion');
+           return false;
+
+       }
+    </script>
+</head>
+<body>
+    
+    <header>
+	
+        <nav>
+            <ul>
+                <li><a href="./Index.html"> Home </a></li>
+                <li><a href="./Discografia.html"> Discografia </a></li>
+                <li><a href="./Galeria_de_videos.html"> Galeria de videos </a></li>
+                <li><a href="./contactanos.html">Contáctanos</a></li>
+			    <li><a href="./stock_de_ventas.html">Stock de ventas</a></li>
+            </ul>
+        </nav>	
+    
+    </header>
+
+    <form action="#" method="GET" onsubmit="return validar(this);">
+        <fieldset>
+            
+        <h1>Formulario de contacto</h1>
+        <legend style="color: black;">(*campos obligatorios)</legend>
+        
+        <label for="id_nombre">Nombre:(*)</label><input type="text" name="nombre" id="id_nombre"
+        placeholder="campo obligatorio" alt="nombre" autofocus required />
+        
+        <label for="id_email">Email:(*)</label><input type="email" name="email" id="id_email"
+        placeholder="campo obligatorio" alt="nombre" required />
+
+        <p style="color: black;">Como nos encontraste:</p><select name="contacto" id="id_contacto ">
+            <option value=" " >Elige una opción</option>
+            <option value="google">Googleando</option>
+            <option value="email">Email</option>
+            <option value="bab">Boca a boca</option>
+            <option value="facebook">Facebook</option>
+            <option value="Twitter">Twitter</option>
+            <option value="Otros">Otros..</option>
+        </select>
+
+        <p style="color: black;">Motivo del contacto</p>
+        <textarea cols="30" rows="5" placeholder="máximo 300 caracteres"></textarea>
+        <label for="id_siguardar">Sus datos seran guardados</label>
+        <input type="checkbox" name="siguardar"  id="id_guardar" checked />
+        
+        <input type="reset" value="Limpiar formulario" />
+        <input type="submit" value="Enviar" />
+    </fieldset>
+    </form>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./Index.html"> Home </a></li>
+                <li><a href="./Discografia.html"> Discografia </a></li>
+                <li><a href="./Galeria_de_videos.html"> Galeria de videos </a></li>
+                <li><a href="./contactanos.html">Contáctanos</a></li>
+			    <li><a href="./stock_de_ventas.html">Stock de ventas</a></li>
+            </ul>
+    
+        </nav>
+    </footer>
+</body>
+</html>
